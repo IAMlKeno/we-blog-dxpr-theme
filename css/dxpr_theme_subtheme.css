@@ -1,0 +1,16 @@
+#navbar {
+  border-bottom: 1px solid #284fdb;
+  margin-bottom: 20px;
+}
+
+article {
+  border-bottom: 1px dashed #284fdb;
+}
+
+article.blog-post > div.content > .links.inline.list-inline > li::after {
+  content: " | ";
+}
+
+.body--dxpr-theme-nav-desktop .dxpr-theme-header--top #logo {
+  max-height: 100px !important;
+}

@@ -1,0 +1,55 @@
+<?php
+
+/**
+ * @file
+ * DXPR Theme sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+/**
+ * Implements hook_preprocess_page().
+ */
+// phpcs:disable
+function keno_dxpr_theme_preprocess_page(&$variables) {
+  $dxpr_theme_libraries = [
+    // Bootstrap TAILORING.
+    'keno_dxpr_theme/bootstrap-3',
+    'keno_dxpr_theme/bootstrap-theme',
+    'keno_dxpr_theme/jquery-ui',
+    // DXPR THEME BASE.
+    'keno_dxpr_theme/footer-menu',
+    'keno_dxpr_theme/forms',
+    'keno_dxpr_theme/layout',
+    'keno_dxpr_theme/page-title',
+    'keno_dxpr_theme/typography',
+    // DXPR THEME Components.
+    'keno_dxpr_theme/dxpr-theme-full-screen-search',
+    'keno_dxpr_theme/dxpr-theme-header',
+    'keno_dxpr_theme/dxpr-theme-header--top',
+    'keno_dxpr_theme/dxpr-theme-header--side',
+    'keno_dxpr_theme/dxpr-theme-header--mobile',
+    'keno_dxpr_theme/dxpr-theme-secondary-header',
+    'keno_dxpr_theme/pager-prevnext',
+    'keno_dxpr_theme/dxpr-theme-admin',
+    // Overrides.
+    'keno_dxpr_theme/cubeportfolio',
+    'keno_dxpr_theme/drupal-breadcrumbs',
+    'keno_dxpr_theme/drupal-comments',
+    'keno_dxpr_theme/drupal-pager',
+    'keno_dxpr_theme/drupal-webform',
+    'keno_dxpr_theme/cms-bootstrap-core',
+    'keno_dxpr_theme/cms-bootstrap-blog',
+    'keno_dxpr_theme/cms-bootstrap-events',
+    'keno_dxpr_theme/cms-bootstrap-news',
+    'keno_dxpr_theme/cms-bootstrap-portfolio',
+    'keno_dxpr_theme/sooperthemes-premium-elements',
+    'keno_dxpr_theme/dxpr-theme-builder',
+    // HELPERS.
+    'keno_dxpr_theme/helper-classes',
+  ];
+  foreach ($dxpr_theme_libraries as $dxpr_theme_library) {
+    $variables['#attached']['library'][] = $dxpr_theme_library;
+  }
+}
+// phpcs:enable
