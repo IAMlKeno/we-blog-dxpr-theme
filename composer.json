@@ -1,0 +1,14 @@
+{
+  "name": "iamlkeno/dxpr_subtheme",
+  "description": "DXPR subtheme derived from DXPR",
+  "type": "drupal-theme",
+  "authors": [
+    {
+      "name": "Elkeno Jones",
+      "homepage": "http://github.com/iamlkeno"
+    }
+  ],
+  "require": {
+    "drupal/dxpr_theme": "^1.2"
+  }
+}
