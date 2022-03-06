@@ -14,3 +14,8 @@ article.blog-post > div.content > .links.inline.list-inline > li::after {
 .body--dxpr-theme-nav-desktop .dxpr-theme-header--top #logo {
   max-height: 100px !important;
 }
+
+.region-highlighted > #block-socialmedialinks {
+  float: right;
+  font-size: small;
+}
